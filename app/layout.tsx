@@ -2,8 +2,9 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import ActiveSectionContext from '@/components/context/ActiveSectionContext'
-
+import {Toaster} from "react-hot-toast"
 const inter = Inter({ subsets: ['latin'] })
+import Footer from '@/components/Footer'
 
 export const metadata = {
   title: 'Create Next App',
@@ -23,7 +24,9 @@ export default function RootLayout({
 
         <ActiveSectionContext>
         <Header/>
-        {children}
+          {children}
+          <Footer/>
+          <Toaster position="top-right"/>
         </ActiveSectionContext>
       </body>
 
