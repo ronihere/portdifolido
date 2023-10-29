@@ -21,9 +21,10 @@ const About = () => {
           React, Next.js, Django , Java & Python
         </span>
         . I am also familiar with TypeScript. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
+        learn new technologies.
+        {/* I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
-        developer.
+        developer. */}
           </p>
           <p>
                <span className="italic">When I'm not coding</span>, I enjoy playing Football , watching Football , playing
