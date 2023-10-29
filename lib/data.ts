@@ -1,10 +1,10 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import YTCloneImage from '@/public/YTClone.png'
+import spotifyImg from '@/public/spotify.png'
+import whiteBoardImg from "@/public/white board.png";
+
 
 export const links = [
   {
@@ -35,54 +35,53 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduation",
+    location: "University of Calcutta, Kolkata",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated in Bachelor's of Computer Science. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2022",
   },
+  
   {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "Mindstix Software Labs, Pune",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I am working as a front-end developer for a year, building and learning new stuffs.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022 - Present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Waves",
+    liveURL: 'https://spot-music.vercel.app/',
+    githubURL:'https://github.com/ronihere/spot-music',
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "a music player web app built with ReactJS, using Framer Motion for animations and CDN for song delivery. It lets users, play, pause, skip, and shuffle songs from a library of songs, and shows the song details on the screen",
+    tags: ["React", "Framer Motion"],
+    imageUrl: spotifyImg,
   },
   {
-    title: "rmtDev",
+    title: "White Board",
+    githubURL: 'https://github.com/ronihere/draw',
+    liveURL: 'https://whiteboard-five.vercel.app/',
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "a whiteboard web application using Next.js and the browser’s native canvas API, enabling users to draw with various colors and save their work.",
+    tags: ["NextJS", "Javascript", "Tailwind", "Redux Toolkit", "Canvas API"],
+    imageUrl: whiteBoardImg,
   },
   {
-    title: "Word Analytics",
+    title: "YouTube Clone",
+    githubURL: 'https://github.com/ronihere/yt',
+    liveURL:null,
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "replicates YouTube’s functionality and design, enables users to search, watch, and interact with videos from YouTube, with features such as autocomplete suggestions, playback controls and comments.",
+    tags: ["React",  "Tailwind", "Redux Toolkit", "Google APIs"],
+    imageUrl: YTCloneImage,
   },
-] as const;
+] ;
 
 export const skillsData = [
   "HTML",

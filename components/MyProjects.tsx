@@ -6,6 +6,7 @@ import { projectsData } from "@/lib/data";
 import Project from "./Project";
 import useSectionInView from "./Hooks/useSectionInview";
 
+
 export default function MyProjects() {
     
 const { ref } = useSectionInView("Projects", 0.6);
@@ -15,9 +16,9 @@ const { ref } = useSectionInView("Projects", 0.6);
       <SectionHeading>My projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
-          <React.Fragment key={index}>
+          <a href={project.liveURL ? project.liveURL : project.githubURL} target="_blank" key={index}>
             <Project {...project} />
-          </React.Fragment>
+          </a>
         ))}
       </div>
     </section>
