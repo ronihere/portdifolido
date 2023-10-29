@@ -18,7 +18,7 @@ const About = () => {
         feeling of finally figuring out a solution to a problem. My core stack
         is{" "}
         <span className="font-medium">
-          React, Next.js, Django , Java & Python
+          React, Next.js, Javascript
         </span>
         . I am also familiar with TypeScript. I am always looking to
         learn new technologies.
