@@ -25,12 +25,15 @@ const Contactme = () => {
           <SectionHeading>Contact Me</SectionHeading>
           <p className='-mt-5 mb-5'>Please contact me directly at <a href='mailto:ronihere4work@gmail.com' className='underline'>ronihere4work@gmail.com</a> or through this form</p>
 
-      <div className='mt-10= flex flex-col'>
+      <div className='mt-10 flex flex-col'>
 
               <input className='h-14 rounded-lg borderBlack p-4' type='email' placeholder='Your email' required maxLength={500} onChange={(e)=>setSenderEmail(String(e.target.value))}/>
               <textarea className='h-52 my-3 rounded-lg borderBlack p-4' placeholder='Your message' required maxLength={5000} onChange={(e)=>setMessage(String(e.target.value))}/>
-              <button onClick={()=>sendEmail()} className='group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105'>Submit <FaPaperPlane className='text-xs opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1  transition'/>{" "}
+        <div className='flex w-full  md:justify-start justify-center'>
+          
+        <button onClick={() => sendEmail()} className=' group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105'>Submit <FaPaperPlane className='text-xs opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1  transition' />{" "}
               </button>
+              </div>
           </div>
     </motion.section>
   )
