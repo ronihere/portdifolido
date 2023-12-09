@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+       '90vw': '90vw',
+     },
+      colors: {
+       'black-10': 'rgba(0, 0, 0, 0.01)',
+     },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

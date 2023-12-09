@@ -7,7 +7,7 @@ import Experience from '@/components/Experience'
 import Contactme from '@/components/Contactme'
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4">
+    <main className="flex flex-col items-center justify-center">
       <Intro />
       <SectionDivider />
       <About />

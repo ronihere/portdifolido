@@ -13,7 +13,7 @@ const Intro = () => {
   const { ref } = useSectionInView("Home", 0.1);
   const { activeSection , setActiveSection , lastTimeHeaderClicked , setLastTimeHeaderClicked } = useActiveSectionContext();
   return (
-    <section ref={ref} className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]' id="home">
+    <section ref={ref} className='mb-10 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]' id="home">
           <div className='flex items-center justify-center'>
         <div className='relative'>
           <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }}

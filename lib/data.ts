@@ -4,6 +4,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import YTCloneImage from '@/public/YTClone.png'
 import spotifyImg from '@/public/spotify.png'
 import whiteBoardImg from "@/public/white board.png";
+import ImgLibImg from '@/public/ImgLib.png'
 
 
 export const links = [
@@ -62,6 +63,15 @@ export const projectsData = [
       "a music player web app built with ReactJS, using Framer Motion for animations and CDN for song delivery. It lets users, play, pause, skip, and shuffle songs from a library of songs, and shows the song details on the screen",
     tags: ["React", "Framer Motion"],
     imageUrl: spotifyImg,
+  },
+  {
+    title: "Image Gallery - Editor",
+    liveURL: 'https://img-lib-dpyl.vercel.app/',
+    githubURL:'https://github.com/ronihere/img-lib',
+    description:
+      `Users can upload images from various sources(Unsplash, DropBox, Google Drive). Offers features like google auto-tagging and AI-driven editing, background removal.`,
+    tags: ["Nextjs", "ShadCN", 'Tailwind', 'Cloudinary'],
+    imageUrl: ImgLibImg,
   },
   {
     title: "White Board",
