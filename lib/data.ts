@@ -85,7 +85,7 @@ export const projectsData = [
   {
     title: "YouTube Clone",
     githubURL: 'https://github.com/ronihere/yt',
-    liveURL:'https://yt-clone-ebf6.vercel.app/',
+    liveURL:'https://yt-clone-ebf6-qnlzomcwe-roni-s-team.vercel.app/',
     description:
       "replicates YouTube’s functionality and design, enables users to search, watch, and interact with videos from YouTube, with features such as autocomplete suggestions, playback controls and comments.",
     tags: ["React",  "Tailwind", "Redux Toolkit", "Google APIs"],
