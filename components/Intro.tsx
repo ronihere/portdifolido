@@ -5,7 +5,7 @@ import { motion, spring } from 'framer-motion'
 import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
 import {HiDownload} from 'react-icons/hi'
-import { FaGithubSquare } from 'react-icons/fa'
+import { FaGithubSquare, FaLink } from 'react-icons/fa'
 import useSectionInView from './Hooks/useSectionInview'
 import { useActiveSectionContext } from './context/ActiveSectionContext'
 
@@ -66,10 +66,14 @@ const Intro = () => {
         <a className='group bg-white cursor-pointer text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition borderBlack' href="/CV.pdf" download={true}>Download CV <HiDownload className='opacity-70 group-hover:translate-y-1 transition'/>{" "}</a>
         
         
-        <a className='bg-white text-gray-700 p-4 flex text-[1.35rem] items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15]  active:scale-[1.15] transition borderBlack hover:text-gray-950' href='https://www.linkedin.com/in/roni-mondal/' target='_blank'><BsLinkedin className=''/></a>
+        <a className='bg-white text-gray-700 p-4 flex text-[1.35rem] items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15]  active:scale-[1.15] transition borderBlack hover:text-gray-950' href='https://www.linkedin.com/in/roni-mondal/' target='_blank'><BsLinkedin className='' /></a>
+
         
         
         <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-[1.15] transition  hover:text-gray-950  borderBlack' href='https://github.com/ronihere' target='_blank'><FaGithubSquare /></a>
+        <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-[1.15] transition  hover:text-gray-950  borderBlack' href='https://linktr.ee/ronihere?utm_source=linktree_profile_share&ltsid=08ec34da-db3d-467c-83a3-c8c339cf6ce0' target='_blank'><FaLink /></a>
+
+
       </motion.div>
     </section>
 
