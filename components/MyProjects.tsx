@@ -10,8 +10,6 @@ import {  TProject } from "@/lib/data";
 export default function MyProjects({projectList}:{projectList : TProject[]}) {
     
 const { ref } = useSectionInView("Projects", 0.6);
-console.log(projectList);
-
   return (
     <section id="projects" ref={ref} className="scroll-mt-28 mb-28">
       <SectionHeading>My projects</SectionHeading>
