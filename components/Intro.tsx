@@ -63,7 +63,7 @@ const Intro = () => {
         </Link>
 
 
-        <a className='group bg-white cursor-pointer text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition borderBlack' href="/RoniMondalCV-17-03-2024.pdf" download={true}>Download CV <HiDownload className='opacity-70 group-hover:translate-y-1 transition'/>{" "}</a>
+        <a className='group bg-white cursor-pointer text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition borderBlack' href="https://drive.google.com/file/d/1nBrvxfCPcAJheDIiY4xBaQzAeKF6RH8Y/view?usp=sharing" download={true}>Download CV <HiDownload className='opacity-70 group-hover:translate-y-1 transition'/>{" "}</a>
         
         
         <a className='bg-white text-gray-700 p-4 flex text-[1.35rem] items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15]  active:scale-[1.15] transition borderBlack hover:text-gray-950' href='https://www.linkedin.com/in/roni-mondal/' target='_blank'><BsLinkedin className='' /></a>

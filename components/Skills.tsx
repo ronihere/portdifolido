@@ -1,6 +1,5 @@
 'use client'
-import React from 'react'
-import { skillsData } from '@/lib/data'
+import React, { useEffect, useState } from 'react'
 import SectionHeading from './SectionHeading'
 import useSectionInView from './Hooks/useSectionInview'
 import { inView, motion } from "framer-motion"
@@ -19,7 +18,7 @@ const fadeInAnimation = {
     }),
 }
 
-const Skills = () => {
+const Skills = ({skills}:{skills: string[]}) => {
     const [ ref1, inView1 ] = useInView();
     const { ref } = useSectionInView('Skills', 0.9);
   return (
@@ -27,7 +26,7 @@ const Skills = () => {
           <SectionHeading>My Skills</SectionHeading>
           <ul className='flex gap-2 flex-wrap text-gray-800 justify-center text-lg'>
               {
-                  skillsData.map((skill , index) =>
+                  skills.map((skill , index) =>
                       <motion.li variants={fadeInAnimation} ref={ref1} initial="initial" animate={inView1 ? "animate" : "initial"} custom={index} className='bg-white border border-black/[0.1] rounded-xl px-5 py-3' key={skill}>
                           {skill}
                       </motion.li>
