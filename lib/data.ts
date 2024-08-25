@@ -35,6 +35,7 @@ export type TProject = {
   description: string;
   tags: string[]; // Array of strings
   imageUrl: string;
+  wip: boolean
 }
 export type TAllData = {
   skills: string[];

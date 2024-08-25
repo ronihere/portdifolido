@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Image from "next/image";
+import wipImg from "@/public/wip.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 type ProjectProps = {
@@ -9,6 +10,7 @@ type ProjectProps = {
   description: string;
   tags: string[];
   imageUrl: string;
+  wip: boolean;
 };
 
 export default function Project({
@@ -16,6 +18,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  wip,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -24,7 +27,7 @@ export default function Project({
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-console.log('imageUrl', imageUrl, title);
+  console.log("imageUrl", wip, title);
   return (
     <motion.div
       ref={ref}
@@ -35,6 +38,7 @@ console.log('imageUrl', imageUrl, title);
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 ">
+        {wip ? <img src={wipImg.src} className="h-8 m-2 absolute" /> : <></>}
         <div className=" pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-black">{description}</p>
