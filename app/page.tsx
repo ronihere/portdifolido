@@ -5,20 +5,17 @@ import MyProjects from "@/components/MyProjects";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Contactme from "@/components/Contactme";
-import { getAllDynamicData} from "@/lib/data";
+import {ProjectAndSkillResponse} from '@/lib/data'
 export default async function Home() {
-  const [dynamicData] = await Promise.allSettled([
-    getAllDynamicData(),
-  ]);
   return (
     <main className="flex flex-col items-center justify-center">
       <Intro />
       <SectionDivider />
       <About />
       <MyProjects
-        projectList={dynamicData.status === "fulfilled" ? dynamicData.value.projects : []}
+        projectList={ProjectAndSkillResponse.projects}
       />
-      <Skills skills={dynamicData.status === "fulfilled" ? dynamicData.value.skills : []} />
+      <Skills skills={ProjectAndSkillResponse.skills} />
       <Experience />
       <Contactme />
     </main>
