@@ -8,8 +8,11 @@ import {HiDownload} from 'react-icons/hi'
 import { FaGithubSquare, FaLink } from 'react-icons/fa'
 import useSectionInView from './Hooks/useSectionInview'
 import { useActiveSectionContext } from './context/ActiveSectionContext'
+import firebase from '../performance.firebase'
+import { cvUrl } from '@/lib/data'
 
 const Intro = () => {
+  const fb = firebase; // not used , just here for initialization
   const { ref } = useSectionInView("Home", 0.1);
   const { activeSection , setActiveSection , lastTimeHeaderClicked , setLastTimeHeaderClicked } = useActiveSectionContext();
   return (
@@ -45,10 +48,10 @@ const Intro = () => {
 
       <motion.h1 className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl' initial={{y:100, opacity:0}} animate={{opacity:1 , y:0}}>
          <span className="font-bold">Hello, I'm Roni.</span> I'm a{" "}
-        <span className="font-bold">Frontend developer.</span>{" "}
+        <span className="font-bold">Fullstack developer.</span>{" "}
         I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="underline">React , Nextjs, Node, Express and Postgress</span>.
       </motion.h1>
 
 
@@ -63,7 +66,7 @@ const Intro = () => {
         </Link>
 
 
-        <a className='group bg-white cursor-pointer text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition borderBlack' href="https://drive.google.com/file/d/1nBrvxfCPcAJheDIiY4xBaQzAeKF6RH8Y/view?usp=sharing" download={true}>Download CV <HiDownload className='opacity-70 group-hover:translate-y-1 transition'/>{" "}</a>
+        <a target="_blank" className='group bg-white cursor-pointer text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition borderBlack' href={cvUrl} download={true}>Download CV <HiDownload className='opacity-70 group-hover:translate-y-1 transition'/>{" "}</a>
         
         
         <a className='bg-white text-gray-700 p-4 flex text-[1.35rem] items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15]  active:scale-[1.15] transition borderBlack hover:text-gray-950' href='https://www.linkedin.com/in/roni-mondal/' target='_blank'><BsLinkedin className='' /></a>

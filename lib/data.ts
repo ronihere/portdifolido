@@ -40,6 +40,7 @@ export type TAllData = {
   skills: string[];
   projects : TProject[];
 };
+export const cvUrl = "https://drive.google.com/file/d/1U3tqNNe_KHWI4oQnxWpN1Esy1EL8kH_C/view?usp=sharing"
 export const experiencesData = [
   {
     title: "Graduation",
@@ -51,38 +52,26 @@ export const experiencesData = [
   },
 
   {
-    title: "Front-End Developer",
+    title: "Full stack Developer",
     location: "Mindstix Software Labs, Pune",
     description:
-      "I am working as a front-end developer for a year, building and learning new stuffs.",
+      "I am working as a full-stack developer here in mindstix, building and learning new stuffs everyday.",
     icon: React.createElement(FaReact),
     date: "2022 - Present",
   },
 ] as const;
 const baseUrl = "https://portdifolido.free.beeceptor.com";
 
-//  [
-  // "HTML",
-  // "CSS",
-  // "JavaScript",
-  // "TypeScript",
-  // "React",
-  // "Next.js",
-  // "Builder.io",
-  // "Java",
-  // "Git",
-  // "Tailwind",
-  // "Redux",
-  // "Python",
-  // "Django",
-  // "Framer Motion",
-// ] as const;
 
 export const ProjectAndSkillResponse = {skills:[  "HTML",
   "CSS",
   "JavaScript",
   "TypeScript",
   "React",
+  "Nodejs",
+  "Expressjs",
+  "Nestjs",
+  "Prisma",
   "Next.js",
   "Builder.io",
   "Java",
@@ -96,7 +85,7 @@ export const ProjectAndSkillResponse = {skills:[  "HTML",
 {title:"Bugbook",
 liveURL:"https://nextjs-social-git-main-ronis-projects-b6e62e21.vercel.app/",
 githubURL:"https://github.com/ronihere/nextjs-social",
-description:"A social media application levaraging features such as creating new Post , follow users ...",
+description:"A social media application levaraging features such as creating new Post , follow friends ...",
 tags:["Nextjs","Shadcn","Tanstack Query"],
 imageUrl:"https://i.ibb.co/7KfWw9f/buglight.png"
 ,
