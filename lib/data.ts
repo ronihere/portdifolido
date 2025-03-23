@@ -83,7 +83,7 @@ export const ProjectAndSkillResponse = {skills:[  "HTML",
   "Framer Motion"],
 "projects":[
 {title:"Bugbook",
-liveURL:"https://nextjs-social-git-main-ronis-projects-b6e62e21.vercel.app/",
+    liveURL: "https://nextjs-social-eosin.vercel.app/",
 githubURL:"https://github.com/ronihere/nextjs-social",
 description:"A social media application levaraging features such as creating new Post , follow friends ...",
 tags:["Nextjs","Shadcn","Tanstack Query"],
